@@ -6,6 +6,7 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
 
        <style>
+        body {background-color: #010133;}
           .row{
              width:720px;
              margin: 10px auto 10px auto ;
@@ -97,10 +98,21 @@
              var fairytale = new buzz.sound("sound/fairytale.mp3");
              var wink = new buzz.sound("sound/wink.mp3");
              var snoring = new buzz.sound("sound/snoring.mp3");
+             var sparkle = new buzz.sound("sound/sparkle.mp3");
+             var swoosh = new buzz.sound("sound/swoosh.mp3");
+             var woosh = new buzz.sound("sound/woosh.mp3");
+             var voice = new buzz.sound("sound/voice.mp3");
 
              window.onload = function() {
-                document.getElementById('CB').addEventListener('mouseover', function () {fairytale.play();});
-                document.getElementById('SBEAR').addEventListener('mouseover', function () {snoring.play();});
+                document.getElementById('CB').addEventListener('mouseover', function() {fairytale.play();});
+                document.getElementById('SBEAR').addEventListener('mouseover', function() {snoring.play();});
+                document.getElementById('S3A').addEventListener('mouseover', function() {wink.play();});
+                document.getElementById('SBP').addEventListener('mouseover', function() {magic3.play();});
+                document.getElementById('SR').addEventListener('mouseover', function() {magic1.play();});
+                document.getElementById('MWB').addEventListener('mouseover', function() {sparkle.play();});
+                document.getElementById('SRF').addEventListener('mouseover', function() {swoosh.play();});
+                document.getElementById('SF').addEventListener('mouseover', function() {voice.play();});
+                document.getElementById('SH').addEventListener('mouseover', function() {magic2.play();});
              }
         </script>
 
